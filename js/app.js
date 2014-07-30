@@ -11,11 +11,13 @@ function getFood(){
           alert("Please run this from snacker.me or simulator/iPhone to view food nearby");
           return;
         }
-        cardTypes=[];
+       cardTypes=[];
         for(i in resp){
-
+         
+        //  alert('pushed')
           cardTypes.push({"image": resp[i]['image'], "title":resp[i]['name']})
         }
+        
     }
   })
 }
